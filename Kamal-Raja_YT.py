@@ -41,9 +41,6 @@ except:
     pass
 
 class sec:
-    """
-    A security class to detect debugging and packet sniffing tools.
-    """
     def __init__(self):
         self.__module__ = __name__
         self.__qualname__ = 'sec'
@@ -90,6 +87,17 @@ def get_width():
         return shutil.get_terminal_size().columns
     except:
         return 45
+
+# Professional Animation Spinner
+def pro_animation(text="Processing"):
+    chars = ["⠋", "⠙", "⠹", "⠸", "⠼", "⠴", "⠦", "⠧", "⠇", "⠏"]
+    for _ in range(12):
+        for char in chars:
+            sys.stdout.write(f"\r\033[1;36m [•] {text} {char}\033[0m")
+            sys.stdout.flush()
+            time.sleep(0.04)
+    sys.stdout.write(f"\r\033[1;32m [+] {text} Success!          \033[0m\n")
+    time.sleep(0.5)
 
 def windows():
     aV = str(random.choice(range(10, 20)))
@@ -214,9 +222,10 @@ def approval_system():
             print(f"{padding}\033[1;32m [+] Opening WhatsApp Group...\033[0m")
             time.sleep(2)
         elif choice == '2':
-            print(f"\n{padding}\033[1;32m welcome to Raja Vau Teach World\033[0m")
-            print(f"{padding}\033[1;33m your Key approved\033[0m")
-            time.sleep(2.5)
+            pro_animation("Verifying Approval")
+            print(f"\n{padding}\033[1;32m Welcome to Raja Vau Teach World\033[0m")
+            print(f"{padding}\033[1;33m Your Key is Approved Successfully!\033[0m")
+            time.sleep(2)
             break
         elif choice == '0':
             exit()
@@ -263,6 +272,7 @@ def old_One():
     print(f"{padding}\033[1;32m(A) METHOD A")
     print(f"{padding}\033[1;32m(B) METHOD B")
     meth = input(f"{padding}\033[1;32mCHOICE (A/B): ").strip().upper()
+    pro_animation("Initializing Cracker")
     with tred(max_workers=30) as pool:
         banner()
         print(f"{padding}\033[1;32mTOTAL ID FROM CRACK : {limit}")
@@ -296,6 +306,7 @@ def old_Tow():
     print(f"{padding}\033[1;32m(A) METHOD A")
     print(f"{padding}\033[1;32m(B) METHOD B")
     meth = input(f"{padding}\033[1;32mCHOICE (A/B): ").strip().upper()
+    pro_animation("Initializing Protected Series")
     with tred(max_workers=30) as pool:
         banner()
         print(f"{padding}\033[1;32mTOTAL ID FROM CRACK : {limit}")
@@ -327,6 +338,7 @@ def old_Tree():
     print(f"{padding}\033[1;32m(A) METHOD A")
     print(f"{padding}\033[1;32m(B) METHOD B")
     meth = input(f"{padding}\033[1;32mCHOICE (A/B): ").strip().upper()
+    pro_animation("Initializing 2009 Series")
     with tred(max_workers=30) as pool:
         banner()
         print(f"{padding}\033[1;32mTOTAL ID FROM CRACK : {limit}")
@@ -473,31 +485,35 @@ def main_menu():
         
         print(f"{padding}\033[1;36m╔════════════════════════════════════════════╗\033[0m")
         print(f"{padding}\033[1;36m║ \033[1;32m[1] \033[1;33m---> \033[1;37mALL SERIES                      \033[1;36m║\033[0m")
-        print(f"{padding}\033[1;36m║ \033[1;32m[2] \033[1;33m---> \033[1;37m100003/4 SERIES                 \033[1;36m║\033[0m")
+        print(f"{padding}\033[1;36m║ \033[1;32m[2] \033[1;33m---> \033[1;37m100003/4 SERIES (\033[1;31mPROTECTED\033[1;37m)   \033[1;36m║\033[0m")
         print(f"{padding}\033[1;36m║ \033[1;32m[3] \033[1;33m---> \033[1;37m2009 SERIES                     \033[1;36m║\033[0m")
         print(f"{padding}\033[1;36m║ \033[1;31m[0] \033[1;33m---> \033[1;37mBACK / EXIT                     \033[1;36m║\033[0m")
         print(f"{padding}\033[1;36m╚════════════════════════════════════════════╝\033[0m")
         
         choice = input(f"{padding}\033[1;33m [-] CHOOSE ---> \033[0m")
         if choice == '1':
+            pro_animation("Loading All Series")
             old_One()
         elif choice == '2':
             print(f"\n{padding}\033[1;33m [!] Option 2 is Password Protected!\033[0m")
             password = input(f"{padding}\033[1;33m [-] ENTER PASSWORD ---> \033[0m")
             if password == 'Kamal2026':
+                pro_animation("Verifying Password")
                 print(f"{padding}\033[1;32m [+] Correct Password! Access Granted.\033[0m")
                 time.sleep(1.5)
                 old_Tow()
             else:
+                pro_animation("Checking Security")
                 print(f"{padding}\033[1;31m [!] Incorrect Password! Access Denied.\033[0m")
                 time.sleep(2)
         elif choice == '3':
+            pro_animation("Loading 2009 Series")
             old_Tree()
         elif choice == '0':
-            print(f"{padding}\n\033[1;31m [!] Exiting...\033[0m")
+            print(f"{padding}\n\033[1;31m [!] Exiting Program...\033[0m")
             break
         else:
-            print(f"{padding}\n\033[1;31m [!] Invalid Choice!\033[0m")
+            print(f"{padding}\n\033[1;31m [!] Invalid Choice! Try Again.\033[0m")
             time.sleep(1)
 
 if __name__ == '__main__':
